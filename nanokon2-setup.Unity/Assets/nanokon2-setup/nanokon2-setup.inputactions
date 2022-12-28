@@ -1,0 +1,1095 @@
+{
+    "name": "nanokon2-setup",
+    "maps": [
+        {
+            "name": "nanoKONTROL2",
+            "id": "f95d3566-b8f2-4b8c-9a64-5b2e8e76f4b3",
+            "actions": [
+                {
+                    "name": "Control0",
+                    "type": "PassThrough",
+                    "id": "02e4c3e4-de41-42fc-9ee3-0fef73753751",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control1",
+                    "type": "PassThrough",
+                    "id": "5bc3cc85-023e-4b71-bbd7-556ec88dddc3",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control2",
+                    "type": "PassThrough",
+                    "id": "a2b5d944-7883-4110-a040-283a4ab5a831",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control3",
+                    "type": "PassThrough",
+                    "id": "750b6077-c13d-43d4-b591-17b50285b541",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control4",
+                    "type": "PassThrough",
+                    "id": "4b19530a-4cb0-46ec-a44a-9f5696db5169",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control5",
+                    "type": "PassThrough",
+                    "id": "d27c8209-1d52-44b7-8162-b16b5474bf2b",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control6",
+                    "type": "PassThrough",
+                    "id": "85cafd15-46a5-462b-8792-9228afd8a633",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control7",
+                    "type": "PassThrough",
+                    "id": "86d46db1-1dbe-4c48-94ac-00f26e5d2795",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control16",
+                    "type": "PassThrough",
+                    "id": "cf88274c-17f9-4b0d-8e3f-3b101a5926b0",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control17",
+                    "type": "PassThrough",
+                    "id": "3d694bbf-8c45-445c-b857-ce78109797da",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control18",
+                    "type": "PassThrough",
+                    "id": "967d5433-35ec-4b18-b42a-40f35bf0cc05",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control19",
+                    "type": "PassThrough",
+                    "id": "33149c3b-4147-4df7-90fe-2457ea3b52ec",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control20",
+                    "type": "PassThrough",
+                    "id": "2389f714-ed27-43b6-9f1e-d6d97c8caa64",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control21",
+                    "type": "PassThrough",
+                    "id": "ffdb6c24-7056-4bdf-956b-487b98d3ec84",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control22",
+                    "type": "PassThrough",
+                    "id": "9745694e-ad03-4213-83ba-6a450f4f9923",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control23",
+                    "type": "PassThrough",
+                    "id": "e9a84912-cd2d-4375-b00e-e87dcc014ab2",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control32",
+                    "type": "PassThrough",
+                    "id": "77cb2fe7-805d-4389-99e4-af0fa626390c",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control33",
+                    "type": "PassThrough",
+                    "id": "6a89effe-d6b5-4b20-ae52-82b4caf6ab37",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control34",
+                    "type": "PassThrough",
+                    "id": "fef1d7d3-583b-4ef0-b91b-ae514c96468e",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control35",
+                    "type": "PassThrough",
+                    "id": "8f287bb6-e4ae-48bc-8d1b-ff82afa92b60",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control36",
+                    "type": "PassThrough",
+                    "id": "0ddd096f-e2c7-46f7-adab-1f0ca8e4a58a",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control37",
+                    "type": "PassThrough",
+                    "id": "4bcad57d-9fbe-4e45-a713-b10fe9c47e31",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control38",
+                    "type": "PassThrough",
+                    "id": "16d801e8-0072-4c8b-ad58-996108ad28eb",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control39",
+                    "type": "PassThrough",
+                    "id": "6ef81261-3495-4bf6-88e5-9c600398d124",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control48",
+                    "type": "PassThrough",
+                    "id": "c9a57642-755f-4b08-93ad-3c12b332a7eb",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control49",
+                    "type": "PassThrough",
+                    "id": "0c5eb09d-0891-4380-b06c-1ade8623f32d",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control50",
+                    "type": "PassThrough",
+                    "id": "7c92631b-fa35-4b0c-b453-64cf67affa7a",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control51",
+                    "type": "PassThrough",
+                    "id": "792bfc8b-4ad0-49a9-b5a5-d3124474caaa",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control52",
+                    "type": "PassThrough",
+                    "id": "4952c65a-5dd3-4ada-ae23-7d0934dd2dfd",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control53",
+                    "type": "PassThrough",
+                    "id": "7b6ccc20-9076-47e1-b32d-34ecac06c214",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control54",
+                    "type": "PassThrough",
+                    "id": "35fb77d1-75f6-4692-9677-52493b594e29",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control55",
+                    "type": "PassThrough",
+                    "id": "0f39ce1f-da49-43e3-ae0f-45e499e30739",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control64",
+                    "type": "PassThrough",
+                    "id": "8a535d0a-0589-49ce-a4d4-d92c0fc4633d",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control65",
+                    "type": "PassThrough",
+                    "id": "238be316-1645-489c-85ca-560a7a1da280",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control66",
+                    "type": "PassThrough",
+                    "id": "83b063bd-3403-4a02-8b4d-20de54a6f16f",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control67",
+                    "type": "PassThrough",
+                    "id": "a51de1ce-6c1d-42c2-bc6d-21db2e81c83a",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control68",
+                    "type": "PassThrough",
+                    "id": "c11528b8-9c23-4e88-baa2-f05e05bf5e3d",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control69",
+                    "type": "PassThrough",
+                    "id": "563b81ef-7dc6-4a26-b3f4-6235bca59ead",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control70",
+                    "type": "PassThrough",
+                    "id": "a37000ed-c2ef-4df6-9d3d-50124fe36c38",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control71",
+                    "type": "PassThrough",
+                    "id": "8f1e2cd8-2f37-4818-8123-07eb71882cd7",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control58",
+                    "type": "PassThrough",
+                    "id": "d0437beb-8b16-4c8c-b9d0-5082223f4904",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control59",
+                    "type": "PassThrough",
+                    "id": "3e220576-6e16-4518-8499-5278845593c0",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control60",
+                    "type": "PassThrough",
+                    "id": "519e8f1d-eb6e-403b-a821-dd32aa477ad2",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control61",
+                    "type": "PassThrough",
+                    "id": "8c6996a1-5fbe-4a98-ac71-469c21156643",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control62",
+                    "type": "PassThrough",
+                    "id": "2f30a957-9b49-4e47-96e5-8c6aff7c35d4",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control46",
+                    "type": "PassThrough",
+                    "id": "08563ef4-e814-4540-bc97-c03956162e44",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control43",
+                    "type": "PassThrough",
+                    "id": "12c24a02-eb4a-47c5-9cfe-c2092432f74e",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control44",
+                    "type": "PassThrough",
+                    "id": "df347e10-28fc-4f16-b471-f8277f575d05",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control42",
+                    "type": "PassThrough",
+                    "id": "bc06f69f-c8b4-4f28-94d7-2506d230759d",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control41",
+                    "type": "PassThrough",
+                    "id": "20cc8a73-fa7b-49af-a985-6ba3fa70f673",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control45",
+                    "type": "PassThrough",
+                    "id": "145c581c-c599-47b1-8ebe-6a6ce309913c",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "122e43f5-895b-4e19-a253-9e9ed95b161c",
+                    "path": "<MidiDevice>/control000",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control0",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2a5de1a5-b25e-47e6-a122-7a3bdb5435cc",
+                    "path": "<MidiDevice>/control001",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "19539bea-0a23-4d91-a94b-78c4aaa43efc",
+                    "path": "<MidiDevice>/control002",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2527da58-edbf-4b50-9aef-c7063f6091fe",
+                    "path": "<MidiDevice>/control003",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4cbcc1f2-a516-428c-9d49-1b83fc785e6f",
+                    "path": "<MidiDevice>/control004",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control4",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "be68ada4-39b6-4bdc-9948-f36ca19d39c6",
+                    "path": "<MidiDevice>/control005",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control5",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4c2f71e8-0c31-496f-a6a1-4b028a304034",
+                    "path": "<MidiDevice>/control006",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control6",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "07005b7f-2ea5-4b6a-8d50-8aad574cbc75",
+                    "path": "<MidiDevice>/control007",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control7",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3b7c1e3d-cbd2-475e-a0d7-f7cc1428cb65",
+                    "path": "<MidiDevice>/control016",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control16",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "426bc1b8-74fa-4579-ba0c-45bb536ee960",
+                    "path": "<MidiDevice>/control017",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control17",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b61627d3-0069-411c-b6ab-32a87d5a7360",
+                    "path": "<MidiDevice>/control018",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control18",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "77932136-1d21-4170-8991-d161866a9a67",
+                    "path": "<MidiDevice>/control019",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control19",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4acddd61-569b-4a1a-ab35-b240cfb964da",
+                    "path": "<MidiDevice>/control020",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control20",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2b9314ca-6826-4c98-a531-544bb5b7e228",
+                    "path": "<MidiDevice>/control021",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control21",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5e81dff3-2b6e-4fbb-9c00-15ad083e3b66",
+                    "path": "<MidiDevice>/control022",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control22",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "688b9318-e3f0-4bdd-98c6-05d3b7869f5f",
+                    "path": "<MidiDevice>/control023",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control23",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "15f2180b-02a8-4216-9ed1-7ac5a0f0c2db",
+                    "path": "<MidiDevice>/control032",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control32",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "556af11c-e207-40a2-ba87-1d9eb9c13505",
+                    "path": "<MidiDevice>/control033",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control33",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e3be0667-b813-49b5-8c23-3b58d96bd435",
+                    "path": "<MidiDevice>/control034",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control34",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d41f7279-0846-43aa-9cdf-a8ecd5ac9fe6",
+                    "path": "<MidiDevice>/control035",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control35",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5cd36cc7-6b66-4bea-9a72-450f31a5b9a9",
+                    "path": "<MidiDevice>/control036",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control36",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8c4162df-f00c-4015-b571-af0a7ab9cfe5",
+                    "path": "<MidiDevice>/control037",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control37",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "28365fcc-e302-45b9-bee2-dbf9074242f4",
+                    "path": "<MidiDevice>/control038",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control38",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bc51f0bb-ff89-4d40-9bb9-f3b6d783ca8d",
+                    "path": "<MidiDevice>/control039",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control39",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "08a5e6be-7ccc-4878-91ea-21a61a78e1a5",
+                    "path": "<MidiDevice>/control048",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control48",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1f152d5b-e802-484a-9e57-90156dbba40a",
+                    "path": "<MidiDevice>/control049",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control49",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bf77f6f3-2b50-4389-90d5-577e4253732e",
+                    "path": "<MidiDevice>/control050",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control50",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3288d09e-51f9-4719-b82b-933d4c204a4e",
+                    "path": "<MidiDevice>/control051",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control51",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "65e6370d-e4b6-401b-99de-26cb65ccf182",
+                    "path": "<MidiDevice>/control052",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control52",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c0fd46df-7b1f-4408-8041-b0410a08515f",
+                    "path": "<MidiDevice>/control053",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control53",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a49fab36-9404-4971-bf40-143a892eabb9",
+                    "path": "<MidiDevice>/control054",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control54",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b89e3e55-df80-468a-b66d-ced1ea2b2bd3",
+                    "path": "<MidiDevice>/control055",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control55",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "df8cf52b-9095-4591-9b7c-05438526077c",
+                    "path": "<MidiDevice>/control064",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control64",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "44226e33-9fd7-41c0-b888-e4992acff1f8",
+                    "path": "<MidiDevice>/control065",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control65",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5e08219d-ad0d-4631-89b8-7e4a25b08d90",
+                    "path": "<MidiDevice>/control066",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control66",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "65fa2179-6814-4712-80e7-58a8ae25c012",
+                    "path": "<MidiDevice>/control067",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control67",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0a9c323f-977a-4c1c-a8c3-c346a1252004",
+                    "path": "<MidiDevice>/control068",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control68",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bceaf0c5-1419-445f-8bf7-4bac4797b4bf",
+                    "path": "<MidiDevice>/control069",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control69",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2eb52287-eb23-4bbd-a6bf-0812ac222d6e",
+                    "path": "<MidiDevice>/control070",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control70",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "15bc4c41-9e9b-47dd-9277-1f9c45eedfe1",
+                    "path": "<MidiDevice>/control071",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control71",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d2662e1a-eda7-41d9-938a-bcc23319c233",
+                    "path": "<MidiDevice>/control058",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control58",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7cf8457e-c17e-455e-b1fb-4ec726ac9ea9",
+                    "path": "<MidiDevice>/control059",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control59",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7f1c7d21-4736-4518-83a5-b2c7c9fcc468",
+                    "path": "<MidiDevice>/control060",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control60",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b9dc6225-73b9-4c74-a4b7-ab8071c82c9f",
+                    "path": "<MidiDevice>/control061",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control61",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ab467b0e-1cc1-4c7d-bf11-ad9c7cbce2ea",
+                    "path": "<MidiDevice>/control062",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control62",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fab8a8b2-78cf-4564-9755-94c00b046b1a",
+                    "path": "<MidiDevice>/control046",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control46",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c8739ae6-2c35-4902-a2cf-990e04806b46",
+                    "path": "<MidiDevice>/control043",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control43",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "20959c01-f96e-43be-b4b2-8bad123eb672",
+                    "path": "<MidiDevice>/control044",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control44",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c38fa5eb-2e2c-489d-b571-f3c1eef2e6f7",
+                    "path": "<MidiDevice>/control042",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control42",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a0bc0aad-4aef-4b71-9702-877538fa659a",
+                    "path": "<MidiDevice>/control041",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control41",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5bbaff56-beb4-4172-9ce0-49a5e42035b0",
+                    "path": "<MidiDevice>/control045",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Control45",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Keyboard&Mouse",
+            "bindingGroup": "Keyboard&Mouse",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Gamepad",
+            "bindingGroup": "Gamepad",
+            "devices": [
+                {
+                    "devicePath": "<Gamepad>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Touch",
+            "bindingGroup": "Touch",
+            "devices": [
+                {
+                    "devicePath": "<Touchscreen>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Joystick",
+            "bindingGroup": "Joystick",
+            "devices": [
+                {
+                    "devicePath": "<Joystick>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "XR",
+            "bindingGroup": "XR",
+            "devices": [
+                {
+                    "devicePath": "<XRController>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
