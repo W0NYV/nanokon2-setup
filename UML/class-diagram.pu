@@ -1,0 +1,43 @@
+@startuml nanoKON2-Setup
+
+title クラス図
+
+namespace W0NYV.nanoKON2 {
+
+    class NanoKON2Handler {
+        - _input : PlayerInput
+        + onSliderMoved : List<UnityEvent<float>>
+    }
+    note bottom: Input SystemからのMIDIを受け取り、イベント発火
+
+    class NanoKON2Model {
+        + sliderValueList : ReactiveCollection
+    }
+    note bottom: 実際のデータ
+
+    class NanoKON2Presenter {
+        - _nanoKON2Handler : NanoKON2Handler
+        - _nanoKON2Model : NanoKON2Model
+        - _slider : Slider
+    }
+    note bottom: 結び付けくん
+
+    class ReactiveCollection {
+
+    }
+    note bottom: ListのReactiveProperty
+
+    class Slider {
+
+    }
+    note bottom: GUI
+
+    ReactiveCollection <-- NanoKON2Model
+
+    NanoKON2Handler <-- NanoKON2Presenter
+    NanoKON2Model <-- NanoKON2Presenter
+    Slider <-- NanoKON2Presenter
+
+}
+
+@enduml
