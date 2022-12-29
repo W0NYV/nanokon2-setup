@@ -20,6 +20,7 @@ namespace W0NYV.nanoKON2
         private const int FUNCTION_BUTTON_COUNTS = 6;
 
         private PlayerInput _input;
+        [SerializeField] private NanoKON2Model _nanoKON2Model;
 
         public List<UnityEvent<float>> onSliderMoved = new List<UnityEvent<float>>();
         public List<UnityEvent<float>> onKnobMoved = new List<UnityEvent<float>>();
@@ -219,72 +220,69 @@ namespace W0NYV.nanoKON2
             _input.actions["Control45"].performed -= (obj) => onFunctionButtonMoved[5].Invoke(obj.ReadValue<float>());
         }
         
-    //     private void Start() {
+        private void Start() {
 
-    //         //Slider
-    //         onSliderMoved[0].AddListener(val => Debug.Log("Slider 0: " + val));
-    //         onSliderMoved[1].AddListener(val => Debug.Log("Slider 1: " + val));
-    //         onSliderMoved[2].AddListener(val => Debug.Log("Slider 2: " + val));
-    //         onSliderMoved[3].AddListener(val => Debug.Log("Slider 3: " + val));
-    //         onSliderMoved[4].AddListener(val => Debug.Log("Slider 4: " + val));
-    //         onSliderMoved[5].AddListener(val => Debug.Log("Slider 5: " + val));
-    //         onSliderMoved[6].AddListener(val => Debug.Log("Slider 6: " + val));
-    //         onSliderMoved[7].AddListener(val => Debug.Log("Slider 7: " + val));
+            //Slider
+            for(int i = 0; i < SLIDER_COUNTS; i++)
+            {
+                int n = i;
+                onSliderMoved[n].AddListener(val => _nanoKON2Model.SliderValueList.ChangeValue(n, val));
+            }
 
-    //         //Knob
-    //         onKnobMoved[0].AddListener(val => Debug.Log("Knob 0: " + val));
-    //         onKnobMoved[1].AddListener(val => Debug.Log("Knob 1: " + val));
-    //         onKnobMoved[2].AddListener(val => Debug.Log("Knob 2: " + val));
-    //         onKnobMoved[3].AddListener(val => Debug.Log("Knob 3: " + val));
-    //         onKnobMoved[4].AddListener(val => Debug.Log("Knob 4: " + val));
-    //         onKnobMoved[5].AddListener(val => Debug.Log("Knob 5: " + val));
-    //         onKnobMoved[6].AddListener(val => Debug.Log("Knob 6: " + val));
-    //         onKnobMoved[7].AddListener(val => Debug.Log("Knob 7: " + val));
+            //Knob
+            onKnobMoved[0].AddListener(val => Debug.Log("Knob 0: " + val));
+            onKnobMoved[1].AddListener(val => Debug.Log("Knob 1: " + val));
+            onKnobMoved[2].AddListener(val => Debug.Log("Knob 2: " + val));
+            onKnobMoved[3].AddListener(val => Debug.Log("Knob 3: " + val));
+            onKnobMoved[4].AddListener(val => Debug.Log("Knob 4: " + val));
+            onKnobMoved[5].AddListener(val => Debug.Log("Knob 5: " + val));
+            onKnobMoved[6].AddListener(val => Debug.Log("Knob 6: " + val));
+            onKnobMoved[7].AddListener(val => Debug.Log("Knob 7: " + val));
 
-    //         //SoloButton
-    //         onSoloButtonMoved[0].AddListener(val => Debug.Log("SoloButton 0: " + val));
-    //         onSoloButtonMoved[1].AddListener(val => Debug.Log("SoloButton 1: " + val));
-    //         onSoloButtonMoved[2].AddListener(val => Debug.Log("SoloButton 2: " + val));
-    //         onSoloButtonMoved[3].AddListener(val => Debug.Log("SoloButton 3: " + val));
-    //         onSoloButtonMoved[4].AddListener(val => Debug.Log("SoloButton 4: " + val));
-    //         onSoloButtonMoved[5].AddListener(val => Debug.Log("SoloButton 5: " + val));
-    //         onSoloButtonMoved[6].AddListener(val => Debug.Log("SoloButton 6: " + val));
-    //         onSoloButtonMoved[7].AddListener(val => Debug.Log("SoloButton 7: " + val));
+            //SoloButton
+            onSoloButtonMoved[0].AddListener(val => Debug.Log("SoloButton 0: " + val));
+            onSoloButtonMoved[1].AddListener(val => Debug.Log("SoloButton 1: " + val));
+            onSoloButtonMoved[2].AddListener(val => Debug.Log("SoloButton 2: " + val));
+            onSoloButtonMoved[3].AddListener(val => Debug.Log("SoloButton 3: " + val));
+            onSoloButtonMoved[4].AddListener(val => Debug.Log("SoloButton 4: " + val));
+            onSoloButtonMoved[5].AddListener(val => Debug.Log("SoloButton 5: " + val));
+            onSoloButtonMoved[6].AddListener(val => Debug.Log("SoloButton 6: " + val));
+            onSoloButtonMoved[7].AddListener(val => Debug.Log("SoloButton 7: " + val));
 
-    //         //MuteButton
-    //         onMuteButtonMoved[0].AddListener(val => Debug.Log("MuteButton 0: " + val));
-    //         onMuteButtonMoved[1].AddListener(val => Debug.Log("MuteButton 1: " + val));
-    //         onMuteButtonMoved[2].AddListener(val => Debug.Log("MuteButton 2: " + val));
-    //         onMuteButtonMoved[3].AddListener(val => Debug.Log("MuteButton 3: " + val));
-    //         onMuteButtonMoved[4].AddListener(val => Debug.Log("MuteButton 4: " + val));
-    //         onMuteButtonMoved[5].AddListener(val => Debug.Log("MuteButton 5: " + val));
-    //         onMuteButtonMoved[6].AddListener(val => Debug.Log("MuteButton 6: " + val));
-    //         onMuteButtonMoved[7].AddListener(val => Debug.Log("MuteButton 7: " + val));
+            //MuteButton
+            onMuteButtonMoved[0].AddListener(val => Debug.Log("MuteButton 0: " + val));
+            onMuteButtonMoved[1].AddListener(val => Debug.Log("MuteButton 1: " + val));
+            onMuteButtonMoved[2].AddListener(val => Debug.Log("MuteButton 2: " + val));
+            onMuteButtonMoved[3].AddListener(val => Debug.Log("MuteButton 3: " + val));
+            onMuteButtonMoved[4].AddListener(val => Debug.Log("MuteButton 4: " + val));
+            onMuteButtonMoved[5].AddListener(val => Debug.Log("MuteButton 5: " + val));
+            onMuteButtonMoved[6].AddListener(val => Debug.Log("MuteButton 6: " + val));
+            onMuteButtonMoved[7].AddListener(val => Debug.Log("MuteButton 7: " + val));
 
-    //         //RecButton
-    //         onRecButtonMoved[0].AddListener(val => Debug.Log("RecButton 0: " + val));
-    //         onRecButtonMoved[1].AddListener(val => Debug.Log("RecButton 1: " + val));
-    //         onRecButtonMoved[2].AddListener(val => Debug.Log("RecButton 2: " + val));
-    //         onRecButtonMoved[3].AddListener(val => Debug.Log("RecButton 3: " + val));
-    //         onRecButtonMoved[4].AddListener(val => Debug.Log("RecButton 4: " + val));
-    //         onRecButtonMoved[5].AddListener(val => Debug.Log("RecButton 5: " + val));
-    //         onRecButtonMoved[6].AddListener(val => Debug.Log("RecButton 6: " + val));
-    //         onRecButtonMoved[7].AddListener(val => Debug.Log("RecButton 7: " + val));
+            //RecButton
+            onRecButtonMoved[0].AddListener(val => Debug.Log("RecButton 0: " + val));
+            onRecButtonMoved[1].AddListener(val => Debug.Log("RecButton 1: " + val));
+            onRecButtonMoved[2].AddListener(val => Debug.Log("RecButton 2: " + val));
+            onRecButtonMoved[3].AddListener(val => Debug.Log("RecButton 3: " + val));
+            onRecButtonMoved[4].AddListener(val => Debug.Log("RecButton 4: " + val));
+            onRecButtonMoved[5].AddListener(val => Debug.Log("RecButton 5: " + val));
+            onRecButtonMoved[6].AddListener(val => Debug.Log("RecButton 6: " + val));
+            onRecButtonMoved[7].AddListener(val => Debug.Log("RecButton 7: " + val));
 
-    //         //TransportButton
-    //         onTransportButtonMoved[0].AddListener(val => Debug.Log("TransportButton 0: " + val));
-    //         onTransportButtonMoved[1].AddListener(val => Debug.Log("TransportButton 1: " + val));
-    //         onTransportButtonMoved[2].AddListener(val => Debug.Log("TransportButton 2: " + val));
-    //         onTransportButtonMoved[3].AddListener(val => Debug.Log("TransportButton 3: " + val));
-    //         onTransportButtonMoved[4].AddListener(val => Debug.Log("TransportButton 4: " + val));
+            //TransportButton
+            onTransportButtonMoved[0].AddListener(val => Debug.Log("TransportButton 0: " + val));
+            onTransportButtonMoved[1].AddListener(val => Debug.Log("TransportButton 1: " + val));
+            onTransportButtonMoved[2].AddListener(val => Debug.Log("TransportButton 2: " + val));
+            onTransportButtonMoved[3].AddListener(val => Debug.Log("TransportButton 3: " + val));
+            onTransportButtonMoved[4].AddListener(val => Debug.Log("TransportButton 4: " + val));
 
-    //         //FunctionButton
-    //         onFunctionButtonMoved[0].AddListener(val => Debug.Log("FunctionButton 0: " + val));
-    //         onFunctionButtonMoved[1].AddListener(val => Debug.Log("FunctionButton 1: " + val));
-    //         onFunctionButtonMoved[2].AddListener(val => Debug.Log("FunctionButton 2: " + val));
-    //         onFunctionButtonMoved[3].AddListener(val => Debug.Log("FunctionButton 3: " + val));
-    //         onFunctionButtonMoved[4].AddListener(val => Debug.Log("FunctionButton 4: " + val));
-    //         onFunctionButtonMoved[5].AddListener(val => Debug.Log("FunctionButton 5: " + val));
-    //     }
+            //FunctionButton
+            onFunctionButtonMoved[0].AddListener(val => Debug.Log("FunctionButton 0: " + val));
+            onFunctionButtonMoved[1].AddListener(val => Debug.Log("FunctionButton 1: " + val));
+            onFunctionButtonMoved[2].AddListener(val => Debug.Log("FunctionButton 2: " + val));
+            onFunctionButtonMoved[3].AddListener(val => Debug.Log("FunctionButton 3: " + val));
+            onFunctionButtonMoved[4].AddListener(val => Debug.Log("FunctionButton 4: " + val));
+            onFunctionButtonMoved[5].AddListener(val => Debug.Log("FunctionButton 5: " + val));
+        }
     }
 }

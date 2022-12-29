@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace W0NYV.nanoKON2
 {
-    public class ReactiveCollection
+    public class FloatReactiveCollection
     {
         private readonly ReactiveCollection<float> _reactiveCollection;
 
@@ -15,7 +15,7 @@ namespace W0NYV.nanoKON2
 
         public IObservable<CollectionReplaceEvent<float>> ReplaceObservable => _reactiveCollection.ObserveReplace();
 
-        public ReactiveCollection(int count)
+        public FloatReactiveCollection(int count)
         {
             _reactiveCollection = new ReactiveCollection<float>();
             for(int i = 0; i < count; i++)
