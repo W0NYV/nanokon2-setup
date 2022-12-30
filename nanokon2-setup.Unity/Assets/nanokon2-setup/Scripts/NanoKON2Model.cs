@@ -21,5 +21,11 @@ namespace W0NYV.nanoKON2
             get => _sliderValueList;
         }
 
+        private FloatReactiveCollection _knobValueList = new FloatReactiveCollection(KNOB_COUNTS);
+        public FloatReactiveCollection KnobValueList
+        {
+            get => _knobValueList;
+        }
+
     } 
 }

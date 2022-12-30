@@ -1,3 +1,4 @@
+using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -88,24 +89,20 @@ namespace W0NYV.nanoKON2
         private void OnEnable() {
             
             //Slider
-            _input.actions["Control0"].performed += (obj) => onSliderMoved[0].Invoke(obj.ReadValue<float>());
-            _input.actions["Control1"].performed += (obj) => onSliderMoved[1].Invoke(obj.ReadValue<float>());
-            _input.actions["Control2"].performed += (obj) => onSliderMoved[2].Invoke(obj.ReadValue<float>());
-            _input.actions["Control3"].performed += (obj) => onSliderMoved[3].Invoke(obj.ReadValue<float>());
-            _input.actions["Control4"].performed += (obj) => onSliderMoved[4].Invoke(obj.ReadValue<float>());
-            _input.actions["Control5"].performed += (obj) => onSliderMoved[5].Invoke(obj.ReadValue<float>());
-            _input.actions["Control6"].performed += (obj) => onSliderMoved[6].Invoke(obj.ReadValue<float>());
-            _input.actions["Control7"].performed += (obj) => onSliderMoved[7].Invoke(obj.ReadValue<float>());
+            for(int i = 0; i < SLIDER_COUNTS; i++)
+            {
+                int n = i;
+                _input.actions["Control" + i.ToString()].performed += (obj) => 
+                    _nanoKON2Model.SliderValueList.ChangeValue(n, obj.ReadValue<float>());
+            }
 
             //Knob
-            _input.actions["Control16"].performed += (obj) => onKnobMoved[0].Invoke(obj.ReadValue<float>());
-            _input.actions["Control17"].performed += (obj) => onKnobMoved[1].Invoke(obj.ReadValue<float>());
-            _input.actions["Control18"].performed += (obj) => onKnobMoved[2].Invoke(obj.ReadValue<float>());
-            _input.actions["Control19"].performed += (obj) => onKnobMoved[3].Invoke(obj.ReadValue<float>());
-            _input.actions["Control20"].performed += (obj) => onKnobMoved[4].Invoke(obj.ReadValue<float>());
-            _input.actions["Control21"].performed += (obj) => onKnobMoved[5].Invoke(obj.ReadValue<float>());
-            _input.actions["Control22"].performed += (obj) => onKnobMoved[6].Invoke(obj.ReadValue<float>());
-            _input.actions["Control23"].performed += (obj) => onKnobMoved[7].Invoke(obj.ReadValue<float>());
+            for(int i = 0; i < KNOB_COUNTS; i++)
+            {
+                int n = i;
+                _input.actions["Control" + (16+n).ToString()].performed += (obj) => 
+                    _nanoKON2Model.KnobValueList.ChangeValue(n, obj.ReadValue<float>());
+            }
 
             //SoloButton
             _input.actions["Control32"].performed += (obj) => onSoloButtonMoved[0].Invoke(obj.ReadValue<float>());
@@ -155,14 +152,12 @@ namespace W0NYV.nanoKON2
 
         private void OnDisable() {
             //Slider
-            _input.actions["Control0"].performed -= (obj) => onSliderMoved[0].Invoke(obj.ReadValue<float>());
-            _input.actions["Control1"].performed -= (obj) => onSliderMoved[1].Invoke(obj.ReadValue<float>());
-            _input.actions["Control2"].performed -= (obj) => onSliderMoved[2].Invoke(obj.ReadValue<float>());
-            _input.actions["Control3"].performed -= (obj) => onSliderMoved[3].Invoke(obj.ReadValue<float>());
-            _input.actions["Control4"].performed -= (obj) => onSliderMoved[4].Invoke(obj.ReadValue<float>());
-            _input.actions["Control5"].performed -= (obj) => onSliderMoved[5].Invoke(obj.ReadValue<float>());
-            _input.actions["Control6"].performed -= (obj) => onSliderMoved[6].Invoke(obj.ReadValue<float>());
-            _input.actions["Control7"].performed -= (obj) => onSliderMoved[7].Invoke(obj.ReadValue<float>());
+            for(int i = 0; i < SLIDER_COUNTS; i++)
+            {
+                int n = i;
+                _input.actions["Control" + i.ToString()].performed -= (obj) => 
+                    _nanoKON2Model.SliderValueList.ChangeValue(n, obj.ReadValue<float>());
+            }
 
             //Knob
             _input.actions["Control16"].performed -= (obj) => onKnobMoved[0].Invoke(obj.ReadValue<float>());
@@ -221,23 +216,6 @@ namespace W0NYV.nanoKON2
         }
         
         private void Start() {
-
-            //Slider
-            for(int i = 0; i < SLIDER_COUNTS; i++)
-            {
-                int n = i;
-                onSliderMoved[n].AddListener(val => _nanoKON2Model.SliderValueList.ChangeValue(n, val));
-            }
-
-            //Knob
-            onKnobMoved[0].AddListener(val => Debug.Log("Knob 0: " + val));
-            onKnobMoved[1].AddListener(val => Debug.Log("Knob 1: " + val));
-            onKnobMoved[2].AddListener(val => Debug.Log("Knob 2: " + val));
-            onKnobMoved[3].AddListener(val => Debug.Log("Knob 3: " + val));
-            onKnobMoved[4].AddListener(val => Debug.Log("Knob 4: " + val));
-            onKnobMoved[5].AddListener(val => Debug.Log("Knob 5: " + val));
-            onKnobMoved[6].AddListener(val => Debug.Log("Knob 6: " + val));
-            onKnobMoved[7].AddListener(val => Debug.Log("Knob 7: " + val));
 
             //SoloButton
             onSoloButtonMoved[0].AddListener(val => Debug.Log("SoloButton 0: " + val));
