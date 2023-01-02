@@ -22,7 +22,7 @@ namespace W0NYV.nanoKON2
         void Start()
         {
             #region 値の変化を見る
-            _nanoKON2Model.SliderValueList.ReplaceObservable.Subscribe(replaceEvent => {
+            NanoKON2Model.instance.SliderValueList.ReplaceObservable.Subscribe(replaceEvent => {
                 _sliders[replaceEvent.Index].value = replaceEvent.NewValue;
                 Debug.Log(replaceEvent.Index + "番目の値が" + replaceEvent.OldValue + "→" + replaceEvent.NewValue + "に変更");
             }).AddTo(this);
@@ -44,7 +44,7 @@ namespace W0NYV.nanoKON2
                     _soloButtons[replaceEvent.Index].SetDefaultState();
                 }
 
-                Debug.Log(replaceEvent.Index + "番目の値が" + replaceEvent.OldValue + "→" + replaceEvent.NewValue + "に変更");
+                // Debug.Log(replaceEvent.Index + "番目の値が" + replaceEvent.OldValue + "→" + replaceEvent.NewValue + "に変更");
             }).AddTo(this);
 
             _nanoKON2Model.MuteButtonValueList.ReplaceObservable.Subscribe(replaceEvent => {
