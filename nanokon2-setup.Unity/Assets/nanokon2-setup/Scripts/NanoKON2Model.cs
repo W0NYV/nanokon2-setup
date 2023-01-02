@@ -27,5 +27,35 @@ namespace W0NYV.nanoKON2
             get => _knobValueList;
         }
 
+        private FloatReactiveCollection _soloButtonValueList = new FloatReactiveCollection(SOLO_BUTTON_COUNTS);
+        public FloatReactiveCollection SoloButtonValueList
+        {
+            get => _soloButtonValueList;
+        }
+
+        private FloatReactiveCollection _muteButtonValueList = new FloatReactiveCollection(MUTE_BUTTON_COUNTS);
+        public FloatReactiveCollection MuteButtonValueList
+        {
+            get => _muteButtonValueList;
+        }
+
+        private FloatReactiveCollection _recButtonValueList = new FloatReactiveCollection(REC_BUTTON_COUNTS);
+        public FloatReactiveCollection RecButtonValueList
+        {
+            get => _recButtonValueList;
+        }
+
+        private FloatReactiveCollection _transportButtonValueList = new FloatReactiveCollection(TRANSPORT_BUTTON_COUNTS);
+        public FloatReactiveCollection TransportButtonValueList
+        {
+            get => _transportButtonValueList;
+        }
+
+                private FloatReactiveCollection _functionButtonValueList = new FloatReactiveCollection(FUNCTION_BUTTON_COUNTS);
+        public FloatReactiveCollection FunctionButtonValueList
+        {
+            get => _functionButtonValueList;
+        }
+
     } 
 }
