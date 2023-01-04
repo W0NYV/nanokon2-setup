@@ -10,7 +10,6 @@ namespace W0NYV.nanoKON2
     public class NanoKON2Presenter : MonoBehaviour
     {
 
-        [SerializeField] private NanoKON2Model _nanoKON2Model;
         [SerializeField] private Slider[] _sliders;
         [SerializeField] private Knob[] _knobs;
         [SerializeField] private Button[] _soloButtons;
@@ -22,17 +21,17 @@ namespace W0NYV.nanoKON2
         void Start()
         {
             #region 値の変化を見る
-            _nanoKON2Model.SliderValueList.ReplaceObservable.Subscribe(replaceEvent => {
+            NanoKON2Model.instance.guiModel.SliderValueList.ReplaceObservable.Subscribe(replaceEvent => {
                 _sliders[replaceEvent.Index].value = replaceEvent.NewValue;
-                Debug.Log(replaceEvent.Index + "番目の値が" + replaceEvent.OldValue + "→" + replaceEvent.NewValue + "に変更");
+                // Debug.Log(replaceEvent.Index + "番目の値が" + replaceEvent.OldValue + "→" + replaceEvent.NewValue + "に変更");
             }).AddTo(this);
 
-            _nanoKON2Model.KnobValueList.ReplaceObservable.Subscribe(replaceEvent => {
+            NanoKON2Model.instance.guiModel.KnobValueList.ReplaceObservable.Subscribe(replaceEvent => {
                 _knobs[replaceEvent.Index].SetValue(replaceEvent.NewValue);
-                Debug.Log(replaceEvent.Index + "番目の値が" + replaceEvent.OldValue + "→" + replaceEvent.NewValue + "に変更");
+                // Debug.Log(replaceEvent.Index + "番目の値が" + replaceEvent.OldValue + "→" + replaceEvent.NewValue + "に変更");
             }).AddTo(this);
 
-            _nanoKON2Model.SoloButtonValueList.ReplaceObservable.Subscribe(replaceEvent => {
+            NanoKON2Model.instance.guiModel.SoloButtonValueList.ReplaceObservable.Subscribe(replaceEvent => {
 
                 //押されたなら
                 if(replaceEvent.NewValue == 1f)
@@ -44,10 +43,10 @@ namespace W0NYV.nanoKON2
                     _soloButtons[replaceEvent.Index].SetDefaultState();
                 }
 
-                Debug.Log(replaceEvent.Index + "番目の値が" + replaceEvent.OldValue + "→" + replaceEvent.NewValue + "に変更");
+                // Debug.Log(replaceEvent.Index + "番目の値が" + replaceEvent.OldValue + "→" + replaceEvent.NewValue + "に変更");
             }).AddTo(this);
 
-            _nanoKON2Model.MuteButtonValueList.ReplaceObservable.Subscribe(replaceEvent => {
+            NanoKON2Model.instance.guiModel.MuteButtonValueList.ReplaceObservable.Subscribe(replaceEvent => {
 
                 //押されたなら
                 if(replaceEvent.NewValue == 1f)
@@ -59,10 +58,10 @@ namespace W0NYV.nanoKON2
                     _muteButtons[replaceEvent.Index].SetDefaultState();
                 }
 
-                Debug.Log(replaceEvent.Index + "番目の値が" + replaceEvent.OldValue + "→" + replaceEvent.NewValue + "に変更");
+                // Debug.Log(replaceEvent.Index + "番目の値が" + replaceEvent.OldValue + "→" + replaceEvent.NewValue + "に変更");
             }).AddTo(this);
 
-            _nanoKON2Model.RecButtonValueList.ReplaceObservable.Subscribe(replaceEvent => {
+            NanoKON2Model.instance.guiModel.RecButtonValueList.ReplaceObservable.Subscribe(replaceEvent => {
 
                 //押されたなら
                 if(replaceEvent.NewValue == 1f)
@@ -74,10 +73,10 @@ namespace W0NYV.nanoKON2
                     _recButtons[replaceEvent.Index].SetDefaultState();
                 }
 
-                Debug.Log(replaceEvent.Index + "番目の値が" + replaceEvent.OldValue + "→" + replaceEvent.NewValue + "に変更");
+                // Debug.Log(replaceEvent.Index + "番目の値が" + replaceEvent.OldValue + "→" + replaceEvent.NewValue + "に変更");
             }).AddTo(this);
 
-            _nanoKON2Model.TransportButtonValueList.ReplaceObservable.Subscribe(replaceEvent => {
+            NanoKON2Model.instance.guiModel.TransportButtonValueList.ReplaceObservable.Subscribe(replaceEvent => {
 
                 //押されたなら
                 if(replaceEvent.NewValue == 1f)
@@ -89,10 +88,10 @@ namespace W0NYV.nanoKON2
                     _transportButtons[replaceEvent.Index].SetDefaultState();
                 }
 
-                Debug.Log(replaceEvent.Index + "番目の値が" + replaceEvent.OldValue + "→" + replaceEvent.NewValue + "に変更");
+                // Debug.Log(replaceEvent.Index + "番目の値が" + replaceEvent.OldValue + "→" + replaceEvent.NewValue + "に変更");
             }).AddTo(this);
 
-            _nanoKON2Model.FunctionButtonValueList.ReplaceObservable.Subscribe(replaceEvent => {
+            NanoKON2Model.instance.guiModel.FunctionButtonValueList.ReplaceObservable.Subscribe(replaceEvent => {
 
                 //押されたなら
                 if(replaceEvent.NewValue == 1f)
@@ -104,7 +103,7 @@ namespace W0NYV.nanoKON2
                     _functionButtons[replaceEvent.Index].SetDefaultState();
                 }
 
-                Debug.Log(replaceEvent.Index + "番目の値が" + replaceEvent.OldValue + "→" + replaceEvent.NewValue + "に変更");
+                // Debug.Log(replaceEvent.Index + "番目の値が" + replaceEvent.OldValue + "→" + replaceEvent.NewValue + "に変更");
             }).AddTo(this);
             #endregion
 
@@ -113,7 +112,7 @@ namespace W0NYV.nanoKON2
             {
                 slider.OnValueChangedAsObservable()
                     .SubscribeWithState(idx, (x, idx) => {
-                        _nanoKON2Model.SliderValueList.ChangeValue(idx, x);
+                        NanoKON2Model.instance.guiModel.SliderValueList.ChangeValue(idx, x);
                     })
                     .AddTo(this);
             }
@@ -122,7 +121,7 @@ namespace W0NYV.nanoKON2
             {
                 knob.ObserveEveryValueChanged(knob => knob.value)
                     .SubscribeWithState(idx, (x, idx) => {
-                        _nanoKON2Model.KnobValueList.ChangeValue(idx, x);
+                        NanoKON2Model.instance.guiModel.KnobValueList.ChangeValue(idx, x);
                     })
                     .AddTo(this);
             }
@@ -131,7 +130,7 @@ namespace W0NYV.nanoKON2
             {
                 soloButton.ObserveEveryValueChanged(soloButton => soloButton.value)
                     .SubscribeWithState(idx, (x, idx) => {
-                        _nanoKON2Model.SoloButtonValueList.ChangeValue(idx, x);
+                        NanoKON2Model.instance.guiModel.SoloButtonValueList.ChangeValue(idx, x);
                     })
                     .AddTo(this);
             }
@@ -140,7 +139,7 @@ namespace W0NYV.nanoKON2
             {
                 muteButton.ObserveEveryValueChanged(muteButton => muteButton.value)
                     .SubscribeWithState(idx, (x, idx) => {
-                        _nanoKON2Model.MuteButtonValueList.ChangeValue(idx, x);
+                        NanoKON2Model.instance.guiModel.MuteButtonValueList.ChangeValue(idx, x);
                     })
                     .AddTo(this);
             }
@@ -149,7 +148,7 @@ namespace W0NYV.nanoKON2
             {
                 recButton.ObserveEveryValueChanged(recButton => recButton.value)
                     .SubscribeWithState(idx, (x, idx) => {
-                        _nanoKON2Model.RecButtonValueList.ChangeValue(idx, x);
+                        NanoKON2Model.instance.guiModel.RecButtonValueList.ChangeValue(idx, x);
                     })
                     .AddTo(this);
             }
@@ -158,7 +157,7 @@ namespace W0NYV.nanoKON2
             {
                 transportButton.ObserveEveryValueChanged(transportButton => transportButton.value)
                     .SubscribeWithState(idx, (x, idx) => {
-                        _nanoKON2Model.TransportButtonValueList.ChangeValue(idx, x);
+                        NanoKON2Model.instance.guiModel.TransportButtonValueList.ChangeValue(idx, x);
                     })
                     .AddTo(this);
             }
@@ -167,7 +166,7 @@ namespace W0NYV.nanoKON2
             {
                 functionButton.ObserveEveryValueChanged(functionButton => functionButton.value)
                     .SubscribeWithState(idx, (x, idx) => {
-                        _nanoKON2Model.FunctionButtonValueList.ChangeValue(idx, x);
+                        NanoKON2Model.instance.guiModel.FunctionButtonValueList.ChangeValue(idx, x);
                     })
                     .AddTo(this);
             }
