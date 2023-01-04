@@ -28,8 +28,9 @@ namespace W0NYV.nanoKON2
                             subscribeObject.index = 0;
                         }
 
-                        NanoKON2Model.instance.SliderValueList.ReplaceObservable
-                        .Subscribe(replaceEvent => {
+                        NanoKON2Model.instance.model.SliderValueList.ReplaceObservable.Subscribe(replaceEvent => 
+                        {
+
                             if(subscribeObject.index == replaceEvent.Index)
                             {
                                 subscribeObject.uniEvent.Invoke(replaceEvent.NewValue);
@@ -38,7 +39,18 @@ namespace W0NYV.nanoKON2
                         break;
                     
                     case Controller.KNOB:
-                        NanoKON2Model.instance.KnobValueList.ReplaceObservable.Subscribe(replaceEvent => {
+                        
+                        if(subscribeObject.index >= ControllerCounts.KNOB_COUNTS)
+                        {
+                            subscribeObject.index = ControllerCounts.KNOB_COUNTS-1;
+                        }
+                        else if(subscribeObject.index < 0)
+                        {
+                            subscribeObject.index = 0;
+                        }
+
+                        NanoKON2Model.instance.model.KnobValueList.ReplaceObservable.Subscribe(replaceEvent => 
+                        {
                             if(subscribeObject.index == replaceEvent.Index)
                             {
                                 subscribeObject.uniEvent.Invoke(replaceEvent.NewValue);
@@ -47,7 +59,18 @@ namespace W0NYV.nanoKON2
                         break;
 
                     case Controller.SOLO_BUTTON:
-                        NanoKON2Model.instance.SoloButtonValueList.ReplaceObservable.Subscribe(replaceEvent => {
+
+                        if(subscribeObject.index >= ControllerCounts.SOLO_BUTTON_COUNTS)
+                        {
+                            subscribeObject.index = ControllerCounts.SOLO_BUTTON_COUNTS-1;
+                        }
+                        else if(subscribeObject.index < 0)
+                        {
+                            subscribeObject.index = 0;
+                        }
+
+                        NanoKON2Model.instance.model.SoloButtonValueList.ReplaceObservable.Subscribe(replaceEvent => 
+                        {
                             if(subscribeObject.index == replaceEvent.Index)
                             {
                                 subscribeObject.uniEvent.Invoke(replaceEvent.NewValue);
@@ -56,7 +79,18 @@ namespace W0NYV.nanoKON2
                         break;
 
                     case Controller.MUTE_BUTTON:
-                        NanoKON2Model.instance.MuteButtonValueList.ReplaceObservable.Subscribe(replaceEvent => {
+
+                        if(subscribeObject.index >= ControllerCounts.MUTE_BUTTON_COUNTS)
+                        {
+                            subscribeObject.index = ControllerCounts.MUTE_BUTTON_COUNTS-1;
+                        }
+                        else if(subscribeObject.index < 0)
+                        {
+                            subscribeObject.index = 0;
+                        }
+
+                        NanoKON2Model.instance.model.MuteButtonValueList.ReplaceObservable.Subscribe(replaceEvent => 
+                        {
                             if(subscribeObject.index == replaceEvent.Index)
                             {
                                 subscribeObject.uniEvent.Invoke(replaceEvent.NewValue);
@@ -65,7 +99,18 @@ namespace W0NYV.nanoKON2
                         break;
 
                     case Controller.REC_BUTTON:
-                        NanoKON2Model.instance.RecButtonValueList.ReplaceObservable.Subscribe(replaceEvent => {
+
+                        if(subscribeObject.index >= ControllerCounts.REC_BUTTON_COUNTS)
+                        {
+                            subscribeObject.index = ControllerCounts.REC_BUTTON_COUNTS-1;
+                        }
+                        else if(subscribeObject.index < 0)
+                        {
+                            subscribeObject.index = 0;
+                        }
+
+                        NanoKON2Model.instance.model.RecButtonValueList.ReplaceObservable.Subscribe(replaceEvent => 
+                        {
                             if(subscribeObject.index == replaceEvent.Index)
                             {
                                 subscribeObject.uniEvent.Invoke(replaceEvent.NewValue);
@@ -74,7 +119,18 @@ namespace W0NYV.nanoKON2
                         break;
 
                     case Controller.TRANSPORT_BUTTON:
-                        NanoKON2Model.instance.TransportButtonValueList.ReplaceObservable.Subscribe(replaceEvent => {
+
+                        if(subscribeObject.index >= ControllerCounts.TRANSPORT_BUTTON_COUNTS)
+                        {
+                            subscribeObject.index = ControllerCounts.TRANSPORT_BUTTON_COUNTS-1;
+                        }
+                        else if(subscribeObject.index < 0)
+                        {
+                            subscribeObject.index = 0;
+                        }
+
+                        NanoKON2Model.instance.model.TransportButtonValueList.ReplaceObservable.Subscribe(replaceEvent => 
+                        {
                             if(subscribeObject.index == replaceEvent.Index)
                             {
                                 subscribeObject.uniEvent.Invoke(replaceEvent.NewValue);
@@ -83,7 +139,18 @@ namespace W0NYV.nanoKON2
                         break;
 
                     case Controller.FUNCTION_BUTTON:
-                        NanoKON2Model.instance.FunctionButtonValueList.ReplaceObservable.Subscribe(replaceEvent => {
+
+                        if(subscribeObject.index >= ControllerCounts.FUNCTION_BUTTON_COUNTS)
+                        {
+                            subscribeObject.index = ControllerCounts.FUNCTION_BUTTON_COUNTS-1;
+                        }
+                        else if(subscribeObject.index < 0)
+                        {
+                            subscribeObject.index = 0;
+                        }
+
+                        NanoKON2Model.instance.model.FunctionButtonValueList.ReplaceObservable.Subscribe(replaceEvent => 
+                        {
                             if(subscribeObject.index == replaceEvent.Index)
                             {
                                 subscribeObject.uniEvent.Invoke(replaceEvent.NewValue);

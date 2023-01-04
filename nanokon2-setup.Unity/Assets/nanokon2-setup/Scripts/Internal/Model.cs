@@ -6,23 +6,8 @@ using UniRx;
 
 namespace W0NYV.nanoKON2
 {
-    public class NanoKON2Model : MonoBehaviour
+    public class Model
     {
-
-        public static NanoKON2Model instance;
-
-        private void Awake() {
-            if(instance == null)
-            {
-                instance = this;
-                DontDestroyOnLoad(gameObject);
-            }
-            else
-            {
-                Destroy(gameObject);
-            }
-        }
-
         public FloatReactiveCollection _sliderValueList = new FloatReactiveCollection(ControllerCounts.SLIDER_COUNTS);
         public FloatReactiveCollection SliderValueList
         {
@@ -64,6 +49,5 @@ namespace W0NYV.nanoKON2
         {
             get => _functionButtonValueList;
         }
-
-    } 
+    }
 }
