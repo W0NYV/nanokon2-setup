@@ -1,11 +1,11 @@
-KORG nanoKONTROL2 Setup Tool For Unity
+💜⚡💜 KORG nanoKONTROL2 Setup Tool For Unity 💜⚡💜
 -------
 
 <img src="https://user-images.githubusercontent.com/15060080/210543288-45508b9e-0784-4f06-b6e1-e76c017e96fc.gif" width="300">
 
 KORG nanoKONTROL2をUnityで使用するためのセットアップツールです。
 
-Dependency
+📎Dependency
 -------
 
 このツールを使用するには、[Input System](https://forpro.unity3d.jp/unity_pro_tips/2021/05/20/1957/)、[Minis](https://github.com/keijiro/Minis)、[UniRx](https://assetstore.unity.com/packages/tools/integration/unirx-reactive-extensions-for-unity-17276)をプロジェクトにインポートする必要があります。
@@ -31,11 +31,11 @@ Dependency
   </tr>
 </table>
 
-Usage
+📘Usage
 -------
-### Set up
+### ⚙️Set up
 
-必要なパッケージをインポートしたら、[こちら](https://github.com/W0NYV/nanokon2-setup/releases/tag/v0-0-1)のUnityPackageもインポートします。
+必要なパッケージをインポートしたら、[こちら](https://github.com/W0NYV/nanokon2-setup/releases/tag/v1-0-0)のUnityPackageもインポートします。
 
 Project Settings -> Player -> Other Settings -> ConfigurationのActive Input HandlingをBothに設定します。
 ![image](https://user-images.githubusercontent.com/15060080/210549116-047e1931-5fc9-48ab-bddb-787926001dd3.png)
@@ -43,7 +43,7 @@ Project Settings -> Player -> Other Settings -> ConfigurationのActive Input Han
 nanokon2-setupフォルダ -> Prefabsフォルダに入っているnanoKONTROL2.prefabを任意のシーンに置き、
 nanoKONTROL2をPCに接続し、実行すると動きます。
 
-### Event Subscription
+### 📄Event Subscription
 
 nanoKONTROL2から信号を受け取り、メソッドを実行したい時は、nanokon2-setupフォルダ -> Scriptsフォルダに入っている
 NanoKON2EventSubscriberコンポーネントを追加します。
