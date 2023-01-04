@@ -33,7 +33,7 @@ Dependency
 
 Usage
 -------
-#### Set up
+### Set up
 
 必要なパッケージをインポートしたら、[こちら](https://github.com/W0NYV/nanokon2-setup/releases/tag/v0-0-1)のUnityPackageもインポートします。
 
@@ -43,7 +43,7 @@ Project Settings -> Player -> Other Settings -> ConfigurationのActive Input Han
 nanokon2-setupフォルダ -> Prefabsフォルダに入っているnanoKONTROL2.prefabを任意のシーンに置き、
 nanoKONTROL2をPCに接続し、実行すると動きます。
 
-#### Event Subscription
+### Event Subscription
 
 nanoKONTROL2から信号を受け取り、メソッドを実行したい時は、nanokon2-setupフォルダ -> Scriptsフォルダに入っている
 NanoKON2EventSubscriberコンポーネントを追加します。
