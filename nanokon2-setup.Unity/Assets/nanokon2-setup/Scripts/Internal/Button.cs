@@ -1,35 +1,47 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using System;
+using UniRx;
 
-public class Button : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
+namespace W0NYV.nanoKON2
 {
-    [SerializeField] private Image _bg;
-    [SerializeField] private Color _defColor;
-    [SerializeField] private Color _pressedColor;
-
-    public float value { get; private set; }
-
-    public void SetPressedState()
+    public class Button : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     {
-        _bg.color = _pressedColor;
-        value = 1f;
-    }
+        [SerializeField] private Image _bg;
+        [SerializeField] private Color _defColor;
+        [SerializeField] private Color _pressedColor;
 
-    public void SetDefaultState()
-    {
-        _bg.color = _defColor;
-        value = 0f;
-    }
+        private ReactiveProperty<float> _valueReactiveProperty = new ReactiveProperty<float>(0f);
+        public IObservable<float> ObservableValue => _valueReactiveProperty;
 
-    public void OnPointerDown(PointerEventData eventData)
-    {
-        SetPressedState();
-    }
 
-    public void OnPointerUp(PointerEventData eventData)
-    {
-        SetDefaultState();
-    }
+        private ReactiveProperty<bool> _hasTouchedReactiveProperty = new ReactiveProperty<bool>(false);
+        public IObservable<bool> ObservableHasTouched => _hasTouchedReactiveProperty;
 
+        public void SetPressedState()
+        {
+            _bg.color = _pressedColor;
+            _valueReactiveProperty.Value = 1f;
+        }
+
+        public void SetDefaultState()
+        {
+            _bg.color = _defColor;
+            _valueReactiveProperty.Value = 0f;
+        }
+
+        public void OnPointerDown(PointerEventData eventData)
+        {        
+            SetPressedState();
+            _hasTouchedReactiveProperty.Value = true;
+        }
+
+        public void OnPointerUp(PointerEventData eventData)
+        {
+            SetDefaultState();
+            _hasTouchedReactiveProperty.Value = false;
+        }
+
+    }
 }
