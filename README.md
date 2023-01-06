@@ -38,7 +38,7 @@ KORG nanoKONTROL2をUnityで使用するためのセットアップツールで�
 必要なパッケージをインポートしたら、[こちら](https://github.com/W0NYV/nanokon2-setup/releases/tag/v1-0-1)のUnityPackageもインポートします。
 
 Project Settings -> Player -> Other Settings -> ConfigurationのActive Input HandlingをBothに設定します。  
-※一度他のものを選択してからBothを選択しないと上手く動作しないみたいです。
+※KORG nanoKONTROL2を接続し、一度他のものを選択し適用してから、Bothを選択しないと上手く動作しないみたいです。
 ![image](https://user-images.githubusercontent.com/15060080/210549116-047e1931-5fc9-48ab-bddb-787926001dd3.png)
 
 nanokon2-setupフォルダ -> Prefabsフォルダに入っているnanoKONTROL2.prefabを任意のシーンに置き、
