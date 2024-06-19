@@ -1,0 +1,28 @@
+{
+    "name": "jp.w0nyv.nanokon2-setup",
+    "displayName": "nanokon2-setup", 
+    "version": "0.0.1",               
+    "unity": "2022.3",
+    "description": "nanoKONTROL2 set up TOOL",
+    "author": {
+        "name": "W0NYV",
+        "url": "https://github.com/W0NYV"
+    },
+
+    "keywords": [
+    ],
+
+    "dependencies": {
+        "com.neuecc.unirx": "7.1.0",
+        "jp.keijiro.minis": "1.0.10",
+        "com.unity.inputsystem": "1.7.0"
+    },
+
+    "samples": [
+        {
+            "displayName": "Sample",
+            "description": "Sample",
+            "path": "Samples/SampleData"
+        }
+    ]
+}
