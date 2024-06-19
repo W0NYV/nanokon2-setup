@@ -8,6 +8,7 @@ namespace W0NYV.nanoKON2
 {
     public class NanoKON2Model : MonoBehaviour
     {
+        [SerializeField] private GameObject _root;
 
         public static NanoKON2Model instance;
         public Model guiModel = new Model();
@@ -17,11 +18,11 @@ namespace W0NYV.nanoKON2
             if(instance == null)
             {
                 instance = this;
-                DontDestroyOnLoad(gameObject);
+                DontDestroyOnLoad(_root);
             }
             else
             {
-                Destroy(gameObject);
+                Destroy(_root);
             }
         }
     } 
