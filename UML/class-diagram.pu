@@ -6,9 +6,6 @@ namespace W0NYV {
 
     namespace nanoKON2 {
 
-        class ControllerCounts {
-        }
-
         class NanoKON2Handler {
             - _input : PlayerInput
         }
@@ -20,9 +17,10 @@ namespace W0NYV {
         }
 
         class NanoKON2Presenter {
-            - _nanoKON2Handler : NanoKON2Handler
-            - _nanoKON2Model : NanoKON2Model
-            - _slider : Slider
+            - _sliders : List<Slider>
+            - _knobs : List<Knob>
+            - _buttons : List<Button>
+
         }
         note bottom: 結び付けくん
 
@@ -34,26 +32,28 @@ namespace W0NYV {
             + sliderValueList : ReactiveCollection
         }
 
-        class FloatReactiveCollection {}
+        class SliderCustom {
+            + value : ReactiveProperty<float>
+            + hasTouched : ReactiveProperty<bool>
+        }
 
-        class Slider {}
+        class Knob {
+            + value : ReactiveProperty<float>
+            + hasTouched : ReactiveProperty<bool>
+        }
 
-        class Knob {}
-
-        class Button {}
+        class Button {
+            + value : ReactiveProperty<float>
+            + hasTouched : ReactiveProperty<bool>
+        }
 
         Model <-- NanoKON2Model 
-        FloatReactiveCollection <-- Model
 
         NanoKON2Model <-- NanoKON2Handler
         NanoKON2Model <- NanoKON2Presenter
         NanoKON2Model <-- NanoKON2EventSubscriber
-        
-        ControllerCounts <-- NanoKON2EventSubscriber
-        ControllerCounts <-- Model
-        ControllerCounts <-- NanoKON2Handler
 
-        Slider <-- NanoKON2Presenter
+        SliderCustom <-- NanoKON2Presenter
         Knob <-- NanoKON2Presenter
         Button <-- NanoKON2Presenter
 
