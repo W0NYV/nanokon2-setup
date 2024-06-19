@@ -12,6 +12,14 @@
     "keywords": [
     ],
 
+    "scopedRegistries": [
+        {
+          "name": "Keijiro",
+          "url": "https://registry.npmjs.com",
+          "scopes": [ "jp.keijiro" ]
+        }
+    ],
+
     "dependencies": {
         "com.neuecc.unirx": "https://github.com/neuecc/UniRx.git?path=Assets/Plugins/UniRx/Scripts",
         "jp.keijiro.minis": "1.0.10",
